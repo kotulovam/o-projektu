@@ -1,5 +1,7 @@
 /* Používáme intuitivní výpočet rozměrů prvků. */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -11,4 +13,56 @@ html {
   max-width: 20rem;
   margin-right: auto;
   margin-left: auto;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  background-color: #F6F3ED;
+
+}
+
+header {
+  width: 15%;
+  background-color: #0D2D4C;
+
+  height: 100vh;
+
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  gap: 2rem;
+  margin-top: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: white
+}
+
+main {
+  width: 50%;
+  padding: 0 4%;
+
+
+}
+
+p {
+  text-align: justify;
+}
+
+.kelímek {
+  max-width: 100px;
+  height: auto;
+}
+
+.logo {
+  margin-top: 5%;
+  display: flex;
+  align-items: flex-end;
+  color: #0D2D4C;
+  ;
 }
