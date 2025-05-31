@@ -34,6 +34,10 @@ a {
   color: white
 }
 
+a:hover {
+  color: rgb(111, 197, 186);
+}
+
 main {
   padding: 0 4%;
 }
