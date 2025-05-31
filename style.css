@@ -9,32 +9,23 @@ html {
   font-family: sans-serif;
 }
 
-.container {
-  max-width: 20rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-
+/* SPOLEČNÉ */
 body {
   display: flex;
+  flex-direction: column;
   margin: 0;
   background-color: #F6F3ED;
-
 }
 
 header {
-  width: 15%;
   background-color: #0D2D4C;
-
-  height: 100vh;
-
 }
 
 nav {
   display: flex;
-  flex-direction: column;
-  padding: 10%;
-  gap: 2rem;
+  justify-content: space-evenly;
+  padding: 2% 5%;
+  gap: 0.5rem;
   margin-top: 5%;
 }
 
@@ -44,10 +35,7 @@ a {
 }
 
 main {
-  width: 50%;
   padding: 0 4%;
-
-
 }
 
 p {
@@ -64,5 +52,58 @@ p {
   display: flex;
   align-items: flex-end;
   color: #0D2D4C;
-  ;
+}
+
+@media (min-width: 720px) {
+  body {
+    flex-direction: row;
+  }
+
+  header {
+    width: 15%;
+    height: 100vh;
+  }
+
+  nav {
+    gap: 2rem;
+    padding: 10%;
+    flex-direction: column;
+  }
+
+  main {
+    width: 85%;
+    padding: 0 11% 0 4%;
+  }
+}
+
+/* O NÁS */
+.osoba {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0D2D4C;
+}
+
+.fotka {
+  margin: 5% 0;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.osoba__popis a {
+  color: #0D2D4C;
+  font-size: smaller;
+}
+
+.osoba__popis a:hover {
+  color: #2b5d90;
+}
+
+@media (min-width: 720px) {
+  .osoba {
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+  }
 }
